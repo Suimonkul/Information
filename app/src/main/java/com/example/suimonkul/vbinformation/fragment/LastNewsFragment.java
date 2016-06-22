@@ -66,7 +66,6 @@ public class LastNewsFragment extends AbstractTabsFragment {
 
             } catch (IOException e) {
                 e.printStackTrace();
-                Log.d("exMy", "LastNews");
             }
 
             return listElements;

@@ -79,7 +79,7 @@
         jumboMode="true"
         optimize="false"
         revision="23.0.3"
-        sha1="e50765a0d9452795d189fd3271b4f3f839efb14c">
+        sha1="c407cf99e8f62686a835f417d58cb2020411c390">
         <dex dex="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_4042e4028d89e2312f7347fe0aa87f3ae40575f7.jar" />
     </item>
     <item
@@ -106,7 +106,7 @@
         jumboMode="true"
         optimize="false"
         revision="23.0.3"
-        sha1="cf13826149e543d3237ea348f0d76cc4f8661f1b">
+        sha1="303c0565ef054daebc5494429d9bc2e91a6e82a4">
         <dex dex="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\pre-dexed\debug\instant-run_4ba6573e6e4750cd974a83c4bfa350836de2b5da.jar" />
     </item>
     <item

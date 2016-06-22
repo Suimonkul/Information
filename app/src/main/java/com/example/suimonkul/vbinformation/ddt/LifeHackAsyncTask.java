@@ -7,6 +7,8 @@ import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
+
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
@@ -25,13 +27,15 @@ public class LifeHackAsyncTask extends AsyncTask<String, String, Elements> {
     TextView h1title;
     Intent intent;
     Activity activity;
+    ImageView im1;
     Document document = null;
     Elements text;
 
-    public LifeHackAsyncTask(Activity activity, TextView moreInformation, TextView h1title) {
+    public LifeHackAsyncTask(Activity activity, TextView moreInformation, TextView h1title, ImageView im1) {
         this.activity = activity;
         this.moreInformation = moreInformation;
         this.h1title = h1title;
+        this.im1 = im1;
     }
 
     @Override
@@ -39,16 +43,16 @@ public class LifeHackAsyncTask extends AsyncTask<String, String, Elements> {
 
         intent = activity.getIntent();
         String intentUrl = intent.getStringExtra("url");
-
+        String prefix = "http://www.igromania.ru";
+        Log.d("moreLogUrl", prefix+intentUrl);
         try {
-            Log.d("moreLogUrl", intentUrl);
-            document = Jsoup.connect(intentUrl).get();
 
-            text = document.select("div#topic");
+            document = Jsoup.connect(prefix+intentUrl).get();
 
-            title = text.select("p").text();
-            more = text.select("div.topic-text").text();
-            Log.d("moreLogPeople", "1=1==11=1=" + more);
+            text = document.select("div.full_block2");
+
+            title = text.select("a.artsectname").text();
+            more = text.select("div.awim_container").text();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -60,6 +64,7 @@ public class LifeHackAsyncTask extends AsyncTask<String, String, Elements> {
     protected void onPostExecute(Elements elements) {
         super.onPostExecute(elements);
         h1title.setText(title);
-//        moreInformation.setText(more);
+        moreInformation.setText(more);
+        Picasso.with(activity).load(text.select("img").attr("src")).into(im1);
     }
 }

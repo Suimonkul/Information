@@ -9,10 +9,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.suimonkul.vbinformation.R;
 import com.example.suimonkul.vbinformation.activity.DetailActivity;
+import com.squareup.picasso.Picasso;
 
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
@@ -53,18 +55,21 @@ public class LifeHackAdapter extends BaseAdapter {
         final HolderPeoples holderPeoples;
         View view = convertView;
         if (view == null) {
-            view = inflater.inflate(R.layout.item_peoples, null, true);
+            view = inflater.inflate(R.layout.item, null, true);
             holderPeoples = new HolderPeoples();
-            holderPeoples.cardViewPeople = (CardView) view.findViewById(R.id.cardViewPeople);
-            holderPeoples.textViewPeople = (TextView) view.findViewById(R.id.tvInfoPeople);
+            holderPeoples.cardViewPeople = (CardView) view.findViewById(R.id.cardView);
+            holderPeoples.textViewPeople = (TextView) view.findViewById(R.id.tvInfo);
+            holderPeoples.textViewPeopleDs = (TextView) view.findViewById(R.id.tvInfoDescription);
+            holderPeoples.imageView = (ImageView) view.findViewById(R.id.titleImage);
             view.setTag(holderPeoples);
         } else {
             holderPeoples = (HolderPeoples) view.getTag();
         }
         final Element element = list.get(position);
         Log.d("myLogPeople", "" + element);
-//        holderPeoples.textViewPeople.setText(element.select("h2.entry-title").text());
-
+        holderPeoples.textViewPeople.setText(element.select("a.articlesbaseresultheader").text());
+        holderPeoples.textViewPeople.setText(element.select("div[style = margin-top:5px;padding-right:4px;]").text());
+        Picasso.with(context).load(element.select("img").attr("src")).into(holderPeoples.imageView);
         holderPeoples.cardViewPeople.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -80,6 +85,8 @@ public class LifeHackAdapter extends BaseAdapter {
 
     public class HolderPeoples {
         TextView textViewPeople;
+        TextView textViewPeopleDs;
         CardView cardViewPeople;
+        ImageView imageView;
     }
 }

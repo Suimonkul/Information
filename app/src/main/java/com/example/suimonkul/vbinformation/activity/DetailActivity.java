@@ -34,16 +34,12 @@ public class DetailActivity extends AppCompatActivity {
         tvMore = (TextView) findViewById(R.id.tvMore);
         tvTitle = (TextView) findViewById(R.id.tvTitle);
         im1 = (ImageView) findViewById(R.id.imageFirst);
-//        im2 = (ImageView) findViewById(R.id.imageSecond);
-//        im3 = (ImageView) findViewById(R.id.imageThird);
-//        im4 = (ImageView) findViewById(R.id.imageFour);
-//        im5 = (ImageView) findViewById(R.id.imageFive);
 
         Intent intent = getIntent();
         Boolean peopleNews = intent.getBooleanExtra("peopleNews", false);
 
         if (peopleNews) {
-            LifeHackAsyncTask task1 = new LifeHackAsyncTask(this, tvMore, tvTitle);
+            LifeHackAsyncTask task1 = new LifeHackAsyncTask(this, tvMore, tvTitle, im1);
             task1.execute();
         } else {
             LastAsyncTask task = new LastAsyncTask(this, tvMore, tvTitle, im1);

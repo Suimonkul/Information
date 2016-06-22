@@ -1,18 +1,14 @@
 package com.example.suimonkul.vbinformation.ddt;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.squareup.picasso.Picasso;
-
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
@@ -40,13 +36,6 @@ public class LastAsyncTask extends AsyncTask<String, String, Elements> {
         this.moreInformation = moreInformation;
         this.h1title = h1title;
         this.im1 = im1;
-//        this.images = new ArrayList<ImageView>();
-//
-//        this.images.add(im1);
-//        this.images.add(im2);
-//        this.images.add(im3);
-//        this.images.add(im4);
-//        this.images.add(im5);
     }
 
     @Override
@@ -78,13 +67,6 @@ public class LastAsyncTask extends AsyncTask<String, String, Elements> {
         super.onPostExecute(elements);
         h1title.setText(title);
         moreInformation.setText(more);
-//        Picasso.with(activity).load(text.select("img.aligncenter").attr("src")).into(im1);
-
-//        Elements imgs = text.select("img");
-//
-//        for (int i = 0; i < 5; i++) {
-//            Picasso.with(activity).load(imgs.get(i).attr("src")).into(this.images.get(i));
-//        }
 
     }
 }
