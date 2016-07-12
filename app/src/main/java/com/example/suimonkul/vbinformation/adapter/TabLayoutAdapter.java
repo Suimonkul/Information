@@ -6,8 +6,8 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 import com.example.suimonkul.vbinformation.fragment.AbstractTabsFragment;
-import com.example.suimonkul.vbinformation.fragment.LifeHackFragment;
-import com.example.suimonkul.vbinformation.fragment.LastNewsFragment;
+import com.example.suimonkul.vbinformation.fragment.CookingFragment;
+import com.example.suimonkul.vbinformation.fragment.ItNewsFragment;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -44,7 +44,7 @@ public class TabLayoutAdapter extends FragmentPagerAdapter {
 
     private void initTabMap() {
         tabs = new HashMap<>();
-        tabs.put(0, LastNewsFragment.getInstance(context));
-        tabs.put(1, LifeHackFragment.getInstance(context));
+        tabs.put(0, ItNewsFragment.getInstance(context));
+        tabs.put(1, CookingFragment.getInstance(context));
     }
 }

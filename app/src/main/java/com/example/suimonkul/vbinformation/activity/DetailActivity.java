@@ -10,8 +10,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.suimonkul.vbinformation.R;
-import com.example.suimonkul.vbinformation.ddt.LastAsyncTask;
-import com.example.suimonkul.vbinformation.ddt.LifeHackAsyncTask;
+import com.example.suimonkul.vbinformation.ddt.ItAsyncTask;
+import com.example.suimonkul.vbinformation.ddt.CookingAsyncTask;
 
 public class DetailActivity extends AppCompatActivity {
 
@@ -39,10 +39,10 @@ public class DetailActivity extends AppCompatActivity {
         Boolean peopleNews = intent.getBooleanExtra("peopleNews", false);
 
         if (peopleNews) {
-            LifeHackAsyncTask task1 = new LifeHackAsyncTask(this, tvMore, tvTitle, im1);
+            CookingAsyncTask task1 = new CookingAsyncTask(this, tvMore, tvTitle, im1);
             task1.execute();
         } else {
-            LastAsyncTask task = new LastAsyncTask(this, tvMore, tvTitle, im1);
+            ItAsyncTask task = new ItAsyncTask(this, tvMore, tvTitle, im1);
             task.execute();
 
         }

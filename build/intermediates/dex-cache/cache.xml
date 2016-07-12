@@ -2,121 +2,95 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="false"
-        revision="23.0.3"
-        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.4.0_63431b8ae3ac3080e2856ed0cef65b328da1061a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="false"
-        revision="23.0.3"
-        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
-        <dex dex="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.4.0_4d63f31b66db4c4d9205450d565e3c7e71664efb.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\Suimonkul\.gradle\caches\modules-2\files-2.1\org.jsoup\jsoup\1.8.3\65fd012581ded67bc20945d85c32b4598c3a9cf1\jsoup-1.8.3.jar"
         jumboMode="true"
-        optimize="false"
         revision="23.0.3"
         sha1="65fd012581ded67bc20945d85c32b4598c3a9cf1">
-        <dex dex="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\pre-dexed\debug\jsoup-1.8.3_78be26329842c2b1ee3181afa75ad891902c1858.jar" />
+        <dex dex="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\transforms\dex\debug\folders\1000\10\jsoup-1.8.3_78be26329842c2b1ee3181afa75ad891902c1858\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="false"
-        revision="23.0.3"
-        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_ae9796928bf727bc0bb94d8a6b49d6f14dbec474.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="false"
-        revision="23.0.3"
-        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
-        <dex dex="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.4.0_5882f9e5f3324d74e46100cef1b9c599d518b4fc.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="false"
-        revision="23.0.3"
-        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
-        <dex dex="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.4.0_5513707b0ea0e5b930f5792390061a4f3e48cd24.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="false"
-        revision="23.0.3"
-        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
-        <dex dex="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.4.0_43a84518f0730a54f1c1f3cb28ce98492dbe4c33.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="false"
-        revision="23.0.3"
-        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
-        <dex dex="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-23.4.0_9a444dd0caaa969946e70cb8a2f11acb4ad96793.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="false"
-        revision="23.0.3"
-        sha1="c407cf99e8f62686a835f417d58cb2020411c390">
-        <dex dex="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_4042e4028d89e2312f7347fe0aa87f3ae40575f7.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
         jumboMode="true"
-        optimize="false"
         revision="23.0.3"
         sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
-        <dex dex="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_47ede77f02297a476d2f8ed09697a2feaf28f738.jar" />
+        <dex dex="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_47ede77f02297a476d2f8ed09697a2feaf28f738\classes.dex" />
     </item>
     <item
-        is-multidex="false"
+        jar="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.4.0_4d63f31b66db4c4d9205450d565e3c7e71664efb\classes.dex" />
+    </item>
+    <item
         jar="E:\app\Android\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
         jumboMode="true"
-        optimize="false"
         revision="23.0.3"
         sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
-        <dex dex="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_e20247d32e3733ebfae30ed3cc2e1c98f6c11179.jar" />
+        <dex dex="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.4.0_e20247d32e3733ebfae30ed3cc2e1c98f6c11179\classes.dex" />
     </item>
     <item
-        is-multidex="false"
+        jar="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.4.0_43a84518f0730a54f1c1f3cb28ce98492dbe4c33\classes.dex" />
+    </item>
+    <item
         jar="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
-        optimize="false"
         revision="23.0.3"
-        sha1="303c0565ef054daebc5494429d9bc2e91a6e82a4">
-        <dex dex="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\pre-dexed\debug\instant-run_4ba6573e6e4750cd974a83c4bfa350836de2b5da.jar" />
+        sha1="7e82cd6c454a04408576388b34214581ef26dbc0">
+        <dex dex="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_4ba6573e6e4750cd974a83c4bfa350836de2b5da\classes.dex" />
     </item>
     <item
-        is-multidex="false"
+        jar="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.4.0_5513707b0ea0e5b930f5792390061a4f3e48cd24\classes.dex" />
+    </item>
+    <item
+        jar="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.4.0_63431b8ae3ac3080e2856ed0cef65b328da1061a\classes.dex" />
+    </item>
+    <item
+        jar="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.4.0_ae9796928bf727bc0bb94d8a6b49d6f14dbec474\classes.dex" />
+    </item>
+    <item
         jar="C:\Users\Suimonkul\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
         jumboMode="true"
-        optimize="false"
         revision="23.0.3"
         sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
-        <dex dex="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\pre-dexed\debug\picasso-2.5.2_fb61a5669a7f2f49c8d332a04d64f7fb9f1fc8a4.jar" />
+        <dex dex="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\transforms\dex\debug\folders\1000\10\picasso-2.5.2_fb61a5669a7f2f49c8d332a04d64f7fb9f1fc8a4\classes.dex" />
+    </item>
+    <item
+        jar="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
+        <dex dex="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-23.4.0_9a444dd0caaa969946e70cb8a2f11acb4ad96793\classes.dex" />
+    </item>
+    <item
+        jar="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="5b475faab7424f54fcc070fbd2762958d2aac577">
+        <dex dex="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_4042e4028d89e2312f7347fe0aa87f3ae40575f7\classes.dex" />
+    </item>
+    <item
+        jar="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.4.0_5882f9e5f3324d74e46100cef1b9c599d518b4fc\classes.dex" />
     </item>
 
 </items>
