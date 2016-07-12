@@ -40,7 +40,7 @@
         jar="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="7e82cd6c454a04408576388b34214581ef26dbc0">
+        sha1="66fb6a8e9fca325d7fd3e6ab80ccdf78301c60c8">
         <dex dex="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_4ba6573e6e4750cd974a83c4bfa350836de2b5da\classes.dex" />
     </item>
     <item
@@ -82,7 +82,7 @@
         jar="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="5b475faab7424f54fcc070fbd2762958d2aac577">
+        sha1="5bab6206bf9744d4f8beb3048b800660e0bf911d">
         <dex dex="E:\StartAndroid\app\KinoAfishaLesson\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_4042e4028d89e2312f7347fe0aa87f3ae40575f7\classes.dex" />
     </item>
     <item

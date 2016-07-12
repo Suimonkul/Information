@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Все самое!</string>
-    <string name="last_news">Последние новости</string>
-    <string name="peoples_news">Народные новости</string>
+    <string name="last_news">IT новости</string>
+    <string name="peoples_news">Кулинария</string>
     <string name="open">Открыть</string>
     <string name="close">Закрыть</string>
 </resources>

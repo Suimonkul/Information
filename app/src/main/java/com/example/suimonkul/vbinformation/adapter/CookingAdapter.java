@@ -67,9 +67,11 @@ public class CookingAdapter extends BaseAdapter {
         }
         final Element element = list.get(position);
         Log.d("myLogPeople", "" + element);
-        holderPeoples.textViewPeople.setText(element.select("a.articlesbaseresultheader").text());
-        holderPeoples.textViewPeople.setText(element.select("div[style = margin-top:5px;padding-right:4px;]").text());
-        Picasso.with(context).load(element.select("img").attr("src")).into(holderPeoples.imageView);
+        element.select("div.shorttitle > div").remove();
+        holderPeoples.textViewPeople.setText(element.select("div.shorttitle").text());
+
+        holderPeoples.textViewPeopleDs.setText(element.select("div.shortnews").text());
+        Picasso.with(context).load("http://www.em.kg/" + element.select("img").attr("src")).into(holderPeoples.imageView);
         holderPeoples.cardViewPeople.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -53,23 +53,22 @@ public class CookingFragment extends AbstractTabsFragment {
         CookingAdapter adapter;
 
 
-
         @Override
         protected Elements doInBackground(String... params) {
 
             Document document = null;
             Elements listElements = new Elements();
-            String urlSite = "http://www.igromania.ru/articles/?section=3928|34|37|9348|40|36|9326|9348|9715";
+            String urlSite = "http://www.em.kg/";
 
             try {
 
                 document = Jsoup.connect(urlSite).get();
-                listElements = document.select("div.articleitem");
+                listElements = document.select("div.shortstory");
 
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            Log.d("exMy", "123 == "+listElements);
+            Log.d("exMy", "123 == " + listElements);
             return listElements;
         }
 

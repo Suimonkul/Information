@@ -43,13 +43,13 @@ public class CookingAsyncTask extends AsyncTask<String, String, Elements> {
 
         intent = activity.getIntent();
         String intentUrl = intent.getStringExtra("url");
-        String prefix = "http://www.igromania.ru";
-        Log.d("moreLogUrl", prefix+intentUrl);
+        String prefix = "";
+        Log.d("moreLogUrl", prefix + intentUrl);
         try {
 
-            document = Jsoup.connect(prefix+intentUrl).get();
-
-            text = document.select("div.full_block2");
+            document = Jsoup.connect(prefix + intentUrl).get();
+            Log.d("moreLogUrl", prefix + intentUrl);
+            text = document.select("div.news-id");
 
             title = text.select("a.artsectname").text();
             more = text.select("div.awim_container").text();
