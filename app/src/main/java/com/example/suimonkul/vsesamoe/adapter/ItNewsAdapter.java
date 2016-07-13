@@ -1,7 +1,6 @@
-package com.example.suimonkul.vbinformation.adapter;
+package com.example.suimonkul.vsesamoe.adapter;
 
 import android.content.Context;
-import android.content.Intent;
 import android.support.v4.app.FragmentActivity;
 import android.support.v7.widget.CardView;
 import android.util.Log;
@@ -13,8 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 
-import com.example.suimonkul.vbinformation.activity.DetailActivity;
-import com.example.suimonkul.vbinformation.R;
+import com.example.suimonkul.vsesamoe.R;
 import com.squareup.picasso.Picasso;
 
 import org.jsoup.nodes.Element;
@@ -73,18 +71,6 @@ public class ItNewsAdapter extends BaseAdapter {
         Picasso.with(context).load(element.select("img").attr("src")).into(holderLast.imageView);
 
         Log.d("URL", element.select("a").attr("href"));
-
-        holderLast.cardView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(context, DetailActivity.class),
-                        request = new Intent(context, DetailActivity.class);
-                request.putExtra("peopleNews", false);
-                intent.putExtra("url", element.select("a").attr("href"));
-                context.startActivity(intent);
-            }
-        });
-
         return view;
     }
 

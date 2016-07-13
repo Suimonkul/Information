@@ -1,4 +1,4 @@
-package com.example.suimonkul.vbinformation.fragment;
+package com.example.suimonkul.vsesamoe.fragment;
 
 import android.content.Context;
 import android.support.v4.app.Fragment;

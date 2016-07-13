@@ -1,16 +1,16 @@
-package com.example.suimonkul.vbinformation.fragment;
+package com.example.suimonkul.vsesamoe.fragment;
+
 
 import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
-import com.example.suimonkul.vbinformation.R;
-import com.example.suimonkul.vbinformation.adapter.CookingAdapter;
+import com.example.suimonkul.vsesamoe.R;
+import com.example.suimonkul.vsesamoe.adapter.ItNewsAdapter;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -18,20 +18,16 @@ import org.jsoup.select.Elements;
 
 import java.io.IOException;
 
-/**
- * Created by Suimonkul on 16.06.2016.
- */
+public class ItNewsFragment extends AbstractTabsFragment {
 
-public class CookingFragment extends AbstractTabsFragment {
+    private static final int LAYOUT = R.layout.fragment_last_news;
 
-    private static final int LAYOUT = R.layout.life;
-
-    public static CookingFragment getInstance(Context context) {
+    public static ItNewsFragment getInstance(Context context) {
         Bundle args = new Bundle();
-        CookingFragment fragment = new CookingFragment();
+        ItNewsFragment fragment = new ItNewsFragment();
         fragment.setArguments(args);
         fragment.setContext(context);
-        fragment.setTitle(context.getString(R.string.peoples_news));
+        fragment.setTitle(context.getString(R.string.last_news));
 
         return fragment;
     }
@@ -39,7 +35,9 @@ public class CookingFragment extends AbstractTabsFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(LAYOUT, container, false);
-        DataDownloadLife task = new DataDownloadLife();
+
+
+        DataDownloadLast task = new DataDownloadLast();
         task.execute();
         return view;
     }
@@ -48,40 +46,39 @@ public class CookingFragment extends AbstractTabsFragment {
         this.context = context;
     }
 
-    public class DataDownloadLife extends AsyncTask<String, String, Elements> {
+    public class DataDownloadLast extends AsyncTask<String, String, Elements> {
 
-        CookingAdapter adapter;
+        ItNewsAdapter adapter;
+        Elements listElements;
 
 
         @Override
         protected Elements doInBackground(String... params) {
 
-            Document document = null;
-            Elements listElements = new Elements();
-            String urlSite = "http://www.em.kg/";
-
+            Document document;
+            listElements = new Elements();
+            String urlSite = "http://www.4pda.ru/";
             try {
 
                 document = Jsoup.connect(urlSite).get();
-                listElements = document.select("div.shortstory");
+                listElements = document.select("article.post");
+
 
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            Log.d("exMy", "123 == " + listElements);
+
             return listElements;
         }
 
         @Override
         protected void onPostExecute(Elements listElements) {
             super.onPostExecute(listElements);
-            adapter = new CookingAdapter(context, listElements);
-            ListView listview = (ListView) view.findViewById(R.id.listViewKul);
+            adapter = new ItNewsAdapter(context, listElements);
+            ListView listview = (ListView) view.findViewById(R.id.listView);
             listview.setAdapter(adapter);
             adapter.notifyDataSetChanged();
 
-
         }
     }
-
 }

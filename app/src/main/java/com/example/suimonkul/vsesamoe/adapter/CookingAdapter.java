@@ -1,7 +1,6 @@
-package com.example.suimonkul.vbinformation.adapter;
+package com.example.suimonkul.vsesamoe.adapter;
 
 import android.content.Context;
-import android.content.Intent;
 import android.support.v4.app.FragmentActivity;
 import android.support.v7.widget.CardView;
 import android.util.Log;
@@ -12,8 +11,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.suimonkul.vbinformation.R;
-import com.example.suimonkul.vbinformation.activity.DetailActivity;
+import com.example.suimonkul.vsesamoe.R;
 import com.squareup.picasso.Picasso;
 
 import org.jsoup.nodes.Element;
@@ -69,20 +67,9 @@ public class CookingAdapter extends BaseAdapter {
         Log.d("myLogPeople", "" + element);
         element.select("div.shorttitle > div").remove();
         holderPeoples.textViewPeople.setText(element.select("div.shorttitle").text());
-
         holderPeoples.textViewPeopleDs.setText(element.select("div.shortnews").text());
         Picasso.with(context).load("http://www.em.kg/" + element.select("img").attr("src")).into(holderPeoples.imageView);
-        holderPeoples.cardViewPeople.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(context, DetailActivity.class);
-                Intent request = new Intent(context, DetailActivity.class);
-                request.putExtra("peopleNews", true);
-                intent.putExtra("url", element.select("a").attr("href"));
-                context.startActivity(intent);
-            }
-        });
-        return view;
+        return  view;
     }
 
     public class HolderPeoples {

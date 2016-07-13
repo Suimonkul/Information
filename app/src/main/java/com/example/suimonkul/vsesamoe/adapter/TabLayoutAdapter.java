@@ -1,13 +1,14 @@
-package com.example.suimonkul.vbinformation.adapter;
+package com.example.suimonkul.vsesamoe.adapter;
 
 import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import com.example.suimonkul.vbinformation.fragment.AbstractTabsFragment;
-import com.example.suimonkul.vbinformation.fragment.CookingFragment;
-import com.example.suimonkul.vbinformation.fragment.ItNewsFragment;
+import com.example.suimonkul.vsesamoe.fragment.AbstractTabsFragment;
+import com.example.suimonkul.vsesamoe.fragment.CookingFragment;
+import com.example.suimonkul.vsesamoe.fragment.ItNewsFragment;
+import com.example.suimonkul.vsesamoe.fragment.SportFragment;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -46,5 +47,6 @@ public class TabLayoutAdapter extends FragmentPagerAdapter {
         tabs = new HashMap<>();
         tabs.put(0, ItNewsFragment.getInstance(context));
         tabs.put(1, CookingFragment.getInstance(context));
+        tabs.put(2, SportFragment.getInstance(context));
     }
 }

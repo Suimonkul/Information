@@ -1,7 +1,6 @@
-package com.example.suimonkul.vbinformation.activity;
+package com.example.suimonkul.vsesamoe.activity;
 
 import android.content.pm.ActivityInfo;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
@@ -10,13 +9,12 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.example.suimonkul.vbinformation.R;
-import com.example.suimonkul.vbinformation.adapter.TabLayoutAdapter;
+import com.example.suimonkul.vsesamoe.R;
+import com.example.suimonkul.vsesamoe.adapter.TabLayoutAdapter;
 
 public class MainActivity extends AppCompatActivity {
 
